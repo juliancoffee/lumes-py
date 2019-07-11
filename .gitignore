@@ -1,0 +1,12 @@
+#ignore all
+*
+
+#unignore directory
+!*/
+
+#unignore python code
+!*.py
+
+#unignore README, .gitignore
+!README.md
+!.gitignore
