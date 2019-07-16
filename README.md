@@ -2,6 +2,7 @@ What it can?
 ==========
 
 Simple wrapper around maim and xclip for doing screenshots
+
 Call `lumes -h` for information
 
 Capabilities

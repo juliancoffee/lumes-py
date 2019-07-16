@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 from os import path
 
 
@@ -10,7 +10,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='lumes',
-    version='0.0.1a',
+    version='0.0.2a3',
     description='A simple wraper for screenshot',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -24,10 +24,10 @@ setup(
     ],
     python_requires='>=3, <4',
     keywords='screenshot',
-    packages=find_packages(exclude=['lumes']),
+    packages=['lumes'],
     entry_points={
         'console_scripts': [
-            'lumes=lumes',
+            'lumes=lumes.__main__:main',
         ],
     },
     project_urls={
