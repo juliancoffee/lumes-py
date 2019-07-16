@@ -2,11 +2,12 @@ import subprocess
 from typing import List
 
 
-def screenshot(args: List[str]) -> bytes:
+def screenshot(selection: bool) -> bytes:
     """
-    Take a screenshot and return it as bytes
+    Get boolean selection,
+    take a screenshot and return it as bytes
     """
-    if args[0] == "-s":
+    if selection:
         img = subprocess.run(["maim", "-s"], stdout=subprocess.PIPE).stdout
     else:
         img = subprocess.run(["maim"], stdout=subprocess.PIPE).stdout

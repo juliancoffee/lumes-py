@@ -1,7 +1,15 @@
 What it can?
 ==========
 
-just call it as `python3 lumes.py -s` and select area to copy it to your clipboard
+Simple wrapper around maim and xclip for doing screenshots
+Call `lumes -h` for information
+
+Capabilities
+-----------
+
+1. Selection area
+2. Move screen to clipboard (by default)
+3. Save screenshot in file or in catalogs
 
 Requirements
 ----------
