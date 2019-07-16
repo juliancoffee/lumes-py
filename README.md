@@ -1,9 +1,8 @@
 What can it do?
 ==========
 
-Simple wrapper around maim and xclip for doing screenshots.
+Simple wrapper around maim and xclip for doing screenshots.</br>
 For help write
-
 `$ lumes -h`
 
 Capabilities
