@@ -10,11 +10,11 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='lumes',
-    version='0.0.2a3',
+    version='0.0.3a0.dev',
     description='A simple wraper for screenshot',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/juliancoffee/lumes',
+    url='https://github.com/juliancoffee/lumes-py/',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Topic :: Utilities',
@@ -31,7 +31,7 @@ setup(
         ],
     },
     project_urls={
-        'Bug Reports': 'https://github.com/juliancoffee/lumes/issues',
-        'Source': 'https://github.com/juliancoffee/lumes/',
+        'Bug Reports': 'https://github.com/juliancoffee/lumes-py/issues',
+        'Source': 'https://github.com/juliancoffee/lumes-py/',
     },
 )
