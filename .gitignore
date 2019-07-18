@@ -1,8 +1,9 @@
 #ignore all
 *
 
-#unignore directory
+#unignore directory, but ignore build
 !*/
+build/
 
 #unignore python code
 !*.py

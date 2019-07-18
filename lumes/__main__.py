@@ -1,17 +1,27 @@
 from .core import *
 from .parse import parser
+from .save import save_path
 
 def main():
-    #TODO implement save to path
-    #path = args["path"]
-
     args = parser()
-    path = args["file"]
+
     selection = args["selection"]
     img = screenshot(selection)
-    clip_board(img)
+
+    to_clipboard(img)
+    print("Screenshot saved to clipboard")
+
+    if args["file"]:
+        path = args["file"]
+    elif args["dir"]:
+        ext = ".png"
+        path = save_path(args["dir"], ext)
+    else:
+        path = ''
+
     if path:
-        save_file(img, path)
+        to_save(img, path)
+        print("File saved to {}".format(path))
 
 if __name__ == "__main__":
     main()
