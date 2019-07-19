@@ -34,9 +34,9 @@ For just get picture of your screen and copy it to clipboard
 </br>`$ lumes `
 </br>The same but with selection of area
 </br>`$ lumes -s `
-</br>Save in file
+</br>Copy to clipboard and save in file
 </br>`$ lumes -f img.png`
-</br>Choose selection and save in directory with screenshots (if you have that directory)
+</br>Choose selection, copy to clipboard and save in directory with screenshots (if you have that directory)
 </br>`$ lumes -s -d $HOME/Screenshots/`
 
 In future
