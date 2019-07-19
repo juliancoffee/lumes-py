@@ -5,6 +5,12 @@ Simple wrapper around maim and xclip for doing screenshots.</br>
 For help write</br>
 `$ lumes -h`
 
+Requirements
+----------
+
+1. maim
+2. xclip
+
 Installation
 ------------
 To upgrade pip
@@ -14,7 +20,7 @@ To upgrade pip
 </br>To upgrade lumes
 </br>`$ python3 -m pip install -U lumes`
 
-Capabilities
+Features
 -----------
 
 1. Selection area
@@ -22,13 +28,20 @@ Capabilities
 3. Save screenshot in file
 4. Save screenshots in directory
 
-Requirements
+Examples
 ----------
-
-1. maim
-2. xclip
+For just get picture of your screen and copy it to clipboard
+</br>`$ lumes `
+</br>The same but with selection of area
+</br>`$ lumes -s `
+</br>Save in file
+</br>`$ lumes -f img.png`
+</br>Choose selection and save in directory with screenshots (if you have that directory)
+</br>`$ lumes -s -d $HOME/Screenshots/`
 
 In future
 ----------
 
 1. Wayland support
+2. Shell-completions support
+3. Integrations with xdotool

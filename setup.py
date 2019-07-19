@@ -10,7 +10,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='lumes',
-    version='0.0.3a0.dev',
+    version='0.0.4a',
     description='A simple wraper for screenshot',
     long_description=long_description,
     long_description_content_type='text/markdown',

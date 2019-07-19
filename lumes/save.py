@@ -1,4 +1,4 @@
-from os import listdir
+from os import listdir, path, makedir
 from datetime import datetime
 
 
@@ -17,4 +17,5 @@ def save_path(save_dir: str, ext: str) -> str:
     ls = listdir(save_dir)
     while (save_file + ext) in ls:
         save_file += "_1"
-    return save_file + ext
+    return path.join(save_dir, save_file + ext)
+
