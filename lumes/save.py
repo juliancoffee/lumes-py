@@ -4,7 +4,7 @@ from datetime import datetime
 
 def save_path(save_dir: str, ext: str) -> str:
     t = datetime.now()
-    save_file = "{y}|{mth}|{d}_{h}:{mn}:{s}".format(
+    save_file = "{y}~{mth}~{d}__{h}:{mn}:{s}".format(
         y=t.year,
         mth=t.month,
         d=t.day,
